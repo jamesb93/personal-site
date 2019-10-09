@@ -1,0 +1,12 @@
+baseURL: /
+languageCode: "en-us"
+title: James Bradbury
+theme: book
+
+publishDir: public
+
+enableGitInfo: true
+params:
+  BookToC: 3
+  # BookRepo: https://github.com/jamesb93/phd-site-hugo
+  BookSearch: true

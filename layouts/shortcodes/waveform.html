@@ -1,0 +1,36 @@
+{{ if not (.Page.Scratch.Get "wavesurfer") }}
+<script src="/js/wavesurfer.min.js"></script>
+{{ .Page.Scratch.Set "wavesurfer" true }}
+{{ end }}
+
+{{ if not (.Page.Scratch.Get "waveform") }}
+{{ .Page.Scratch.Set "waveform" 1}}
+{{ else }}
+{{ .Page.Scratch.Add "waveform" 1 }}
+{{ end }}
+{{ $num := .Page.Scratch.Get "waveform"}}
+{{ $id := (printf "wavesurfer_%d" $num)}}
+
+<div id="waveform_{{ .Page.Scratch.Get "waveform"}}" align="left">
+    <script type="text/javascript">
+        var {{$id | safeJS}} = WaveSurfer.create({
+            container: document.querySelector('#waveform_{{ .Page.Scratch.Get "waveform" }}'),
+            barGap: 0,
+            barWidth: 1,
+            cursorColor: "#4f76d1",
+            cursorWidth: 2,
+            progressColor: "#4f76d1",
+            skipLength: 9999,
+            waveColor: "#00000"
+        });
+
+        {{$id | safeJS}}.load("{{ index .Params 0 }}");
+    </script>
+    <button class="book-btn" onclick="{{$id | safeJS}}.playPause()" data-action="play">Play/Pause</button>
+    <button class="book-btn" onclick="{{$id | safeJS}}.skipBackward()" data-action="back">Restart</button>
+</div>
+
+
+
+
+
