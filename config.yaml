@@ -5,8 +5,8 @@ theme: book
 
 publishDir: public
 
-enableGitInfo: true
+enableGitInfo: false
 params:
-  BookToC: 3
-  # BookRepo: https://github.com/jamesb93/phd-site-hugo
-  BookSearch: true
+  BookToC: false
+  BookRepo: false
+  BookSearch: false

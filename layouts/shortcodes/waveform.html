@@ -11,11 +11,13 @@
 {{ $num := .Page.Scratch.Get "waveform"}}
 {{ $id := (printf "wavesurfer_%d" $num)}}
 
-<div id="waveform_{{ .Page.Scratch.Get "waveform"}}" align="left">
+<div id="waveform_{{ .Page.Scratch.Get "waveform"}}">
     <script type="text/javascript">
         var {{$id | safeJS}} = WaveSurfer.create({
             container: document.querySelector('#waveform_{{ .Page.Scratch.Get "waveform" }}'),
             barGap: 0,
+            height: 50,
+            normalize: true,
             barWidth: 1,
             cursorColor: "#4f76d1",
             cursorWidth: 2,
@@ -24,13 +26,13 @@
             waveColor: "#00000"
         });
 
-        {{$id | safeJS}}.load("{{ index .Params 0 }}");
+        {{$id | safeJS}}.load("/audio/{{ index .Params 0 }}");
     </script>
-    <button class="book-btn" onclick="{{$id | safeJS}}.playPause()" data-action="play">Play/Pause</button>
-    <button class="book-btn" onclick="{{$id | safeJS}}.skipBackward()" data-action="back">Restart</button>
+    <br>
+    <button class="btn btn-primary" onclick="{{$id | safeJS}}.playPause()" data-action="play">Play/Pause</button>
+    <button class="btn btn-primary" onclick="{{$id | safeJS}}.skipBackward()" data-action="back">Restart</button>
+
 </div>
-
-
-
-
-
+<br>
+<hr>
+<br>
