@@ -1,6 +1,0 @@
-{{ if not (.Page.Scratch.Get "chartjs") }}
-<script src="{{ "/js/Chart.min.js" | relURL }}"></script>
-{{ .Page.Scratch.Set "chartjs" true }}
-{{ end }}
-
-{{ .Inner }}

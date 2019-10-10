@@ -3,6 +3,11 @@
 {{ .Page.Scratch.Set "wavesurfer" true }}
 {{ end }}
 
+{{ if not (.Page.Scratch.Get "jquery") }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{{ .Page.Scratch.Set "jquery" true }}
+{{ end }}
+
 {{ if not (.Page.Scratch.Get "waveform") }}
 {{ .Page.Scratch.Set "waveform" 1}}
 {{ else }}
@@ -13,25 +18,25 @@
 
 <div id="waveform_{{ .Page.Scratch.Get "waveform"}}">
     <script type="text/javascript">
-        var {{$id | safeJS}} = WaveSurfer.create({
-            container: document.querySelector('#waveform_{{ .Page.Scratch.Get "waveform" }}'),
-            barGap: 0,
-            height: 50,
-            barWidth: 1,
-            cursorColor: "#4f76d1",
-            cursorWidth: 2,
-            progressColor: "#4f76d1",
-            skipLength: 9999,
-            waveColor: "#00000"
-        });
+        $.getJSON("/audio/{{ index .Params 0}}.json", function(json) {
+            var {{$id | safeJS}} = WaveSurfer.create({
+                container: document.querySelector('#waveform_{{ .Page.Scratch.Get "waveform" }}'),
+                barGap: 0,
+                height: 50,
+                barWidth: 1,
+                cursorColor: "#4f76d1",
+                cursorWidth: 2,
+                progressColor: "#4f76d1",
+                skipLength: 9999,
+                waveColor: "#00000"
+            });
 
-        {{$id | safeJS}}.load("/audio/{{ index .Params 0 }}", preload='none');
+            {{$id | safeJS}}.load("/audio/{{ index .Params 0 }}.mp3",peaks=json.data);
+        });
     </script>
-    <br>
     <button class="btn btn-primary" onclick="{{$id | safeJS}}.playPause()" data-action="play">Play/Pause</button>
     <button class="btn btn-primary" onclick="{{$id | safeJS}}.skipBackward()" data-action="back">Restart</button>
-
 </div>
+
 <br>
 <hr>
-<br>
