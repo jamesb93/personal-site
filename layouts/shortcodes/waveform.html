@@ -17,7 +17,6 @@
             container: document.querySelector('#waveform_{{ .Page.Scratch.Get "waveform" }}'),
             barGap: 0,
             height: 50,
-            normalize: true,
             barWidth: 1,
             cursorColor: "#4f76d1",
             cursorWidth: 2,
@@ -26,7 +25,7 @@
             waveColor: "#00000"
         });
 
-        {{$id | safeJS}}.load("/audio/{{ index .Params 0 }}");
+        {{$id | safeJS}}.load("/audio/{{ index .Params 0 }}", preload='none');
     </script>
     <br>
     <button class="btn btn-primary" onclick="{{$id | safeJS}}.playPause()" data-action="play">Play/Pause</button>
