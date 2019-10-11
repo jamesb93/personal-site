@@ -19,6 +19,6 @@ type: docs
 {{< peaks "biomimicry_2" >}}
 
 **Traced Over - 2016**<br>Guitar and Electronics<br>[Jameson Feakes (Guitar)](http://www.jamesonfeakes.com) & James Bradbury (Electronics)
-{{< peaks "traced_over_stereo" >}}
+{{< peaks "traced-over-stereo" >}}
 
 
