@@ -14,5 +14,5 @@ I also wrote a more [comprehensive article](https://quod.lib.umich.edu/i/icmc/bb
 
 <iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2202860367/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless=""><a href="http://tonelist.bandcamp.com/album/biomimicry">Biomimicry by James Bradbury</a></iframe>
 
-<img src="/img/sage.png" alt="Sage Pbbbt at the first performance of Biomimicry in 2017.">
+<img src="/img/sage.jpg" alt="Sage Pbbbt at the first performance of Biomimicry in 2017.">
 <figcaption> Sage Pbbbt performing live with the Biomimicry system. The laptop can be seen sneakily located off stage. </figcaption>
