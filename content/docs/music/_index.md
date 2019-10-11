@@ -21,7 +21,4 @@ type: docs
 **Traced Over - 2016**<br>Guitar and Electronics<br>[Jameson Feakes (Guitar)](http://www.jamesonfeakes.com) & James Bradbury (Electronics)
 {{< peaks "traced_over_stereo" >}}
 
-**Forkhead Box - 2016**<br>Fixed Media
-{{< peaks "forkhead_box" >}}
-
 
