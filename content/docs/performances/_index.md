@@ -16,7 +16,7 @@ Stitch/Strata for Fixed Media. HISS @ 10, 2019, University of York, UK.
 
 ### **2017**
 
-'Biomimicry' for Interactive system and one musician. 19 January at Babushka Bar, WA as part of the Audible Edge New Music Festival. <br> Performed by [Sage Pbbbt (Voice)] and James Bradbury (Electronics) 
+'Biomimicry' for Interactive system and one musician. 19 January at Babushka Bar, WA as part of the Audible Edge New Music Festival. <br> Performed by [Sage Pbbbt (Voice)](https://sagepbbbt.com) and James Bradbury (Electronics) 
 <hr>
 
 ### **2016**
