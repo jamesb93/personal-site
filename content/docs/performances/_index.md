@@ -9,6 +9,8 @@ type: docs
 
 ### **2019**
 
+Refracted Touch for Slide Guitar and Electronics. St Paul's, Huddersfield, 2019 UK. Performed by [Daryl Buckley (Slide Guitar)](http://www.elision.org.au/elision-189/) and James Bradbury (Electronics)
+
 Stitch/Strata for Fixed Media. Diffused at Electric Spring, University of Huddersfield, 2019 UK.
 
 Stitch/Strata for Fixed Media. HISS @ 10, 2019, University of York, UK.
