@@ -11,9 +11,10 @@ type: docs
 
 nimBend is a lightweight command-line tool for converting any format of raw data into audio. Several key parameters are exposed to the user allowing them to influence the encoding of the output, such as the bit-depth, channels and the sampling rate. The application compiles to almost any platform including Android, iOS and ARM alongside standard OS distributions like MacOS, Windows and Linux.
 
-https://github.com/jamesb93/nimBend
-
 Languages(s): Nim
+
+https://github.com/jamesb93/nimBend
+<hr>
 
 ## FrameLib
 
