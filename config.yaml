@@ -10,3 +10,8 @@ params:
   BookToC: false
   BookRepo: false
   BookSearch: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
