@@ -7,13 +7,13 @@ type: docs
 # code
 ---
 
-## nimBend
+## mosh
 
-nimBend is a lightweight command-line tool for converting any format of raw data into audio. Several key parameters are exposed to the user allowing them to influence the encoding of the output, such as the bit-depth, channels and the sampling rate. The application compiles to almost any platform including Android, iOS and ARM alongside standard OS distributions like MacOS, Windows and Linux.
+mosh is a lightweight command-line tool for converting any format of raw data into audio. Several key parameters are exposed to the user allowing them to influence the encoding of the output, such as the bit-depth, channels and the sampling rate. The application compiles to almost any architecture including Android, iOS and ARM alongside standard OS distributions like MacOS, Windows and Linux.
 
 Languages(s): Nim
 
-https://github.com/jamesb93/nimBend
+https://github.com/jamesb93/mosh
 <hr>
 
 ## FrameLib
@@ -23,15 +23,6 @@ I am currently responsible for building out and creating the Max documentation f
 Language(s): C++, Python 3+
 
 https://github.com/jamesb93/FrameLib
-<hr>
-
-## AutoScrape
-
-This is codebase is a break off from a larger creative project that involved converting raw data on hard drives into audio. This small python application leverages SoX to do the conversion, and gives the user some simple parameters to manage the output.
-
-Language(s): Python 3+
-
-https://github.com/jamesb93/AutoScrape
 <hr>
 
 ## REAScript(s)
