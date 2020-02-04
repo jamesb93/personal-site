@@ -1,5 +1,5 @@
 {{ if not (.Page.Scratch.Get "peaks") }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/peaks.js/0.13.0/peaks.min.js" integrity="sha256-GS1DXq3Zq0HzUVDxngHxmtu5leUMVmESODCMyY+pUAA=" crossorigin="anonymous"></script>
+<script src="{{ "/js/peaks.js" | relURL }}"></script>
 {{ .Page.Scratch.Set "peaks" true }}
 {{ end }}
 
