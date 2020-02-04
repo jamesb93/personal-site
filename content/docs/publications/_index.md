@@ -16,6 +16,10 @@ This page contains a list of all official peer-reviewed publications and present
 
 ### 2019
 
+*(p)* - 'Finding things in stuff'. FluCoMa Plenary 2019, Huddersfield, UK. **video to come soon**
+
+*(p)* - 'Composing with raw data and content-aware programs in Python and Lua'. Creative Coding Lab, Huddersfield, UK.
+
 *(p)* – ‘Making decisions about making decisions about making decisions’. Creative Coding Lab Symposium @ Electric Spring 2019, Huddersfield, UK. [**Video**](https://youtu.be/Ro30O9u7l8M)
 
 *(p)* – ‘Annealing Strategies’. CeReNeM Colloquium 2019, Huddersfield, UK.
