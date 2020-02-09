@@ -1,9 +1,12 @@
 {{ if not (.Page.Scratch.Get "peaks") }}
-<!-- <script src="{{ "/js/peaks.js" | relURL }}"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/peaks.js/0.19.0/peaks.js"></script>
+<script src="{{ "/js/peaks.js" | relURL }}"></script>
 {{ .Page.Scratch.Set "peaks" true }}
 {{ end }}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+{{ if not (.Page.Scratch.Get "jquery") }}
+<script src="{{ "/js/jquery.min.js" | relURL }}"></script>
+{{ .Page.Scratch.Set "jquery" true }}
+{{ end }}
 
 {{ if not (.Page.Scratch.Get "audio_peaks") }}
 {{ .Page.Scratch.Set "audio_peaks" 1}}
