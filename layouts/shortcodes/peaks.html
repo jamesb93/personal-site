@@ -3,6 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/peaks.js/0.19.0/peaks.js"></script>
 {{ .Page.Scratch.Set "peaks" true }}
 {{ end }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 {{ if not (.Page.Scratch.Get "audio_peaks") }}
 {{ .Page.Scratch.Set "audio_peaks" 1}}
@@ -30,42 +31,44 @@
 
 
 <script>
-(function(Peaks) {
-const options = {
-    containers: {
-        zoomview: document.getElementById('peaks-zoom-{{ .Page.Scratch.Get "audio_peaks"}}'),
-        overview: document.getElementById('peaks-overview-{{ .Page.Scratch.Get "audio_peaks"}}')
-    },
-    mediaElement: document.getElementById('peaks-audio{{ .Page.Scratch.Get "audio_peaks"}}'),
-    dataUri: {
-        arraybuffer: '/waveforms/{{ index .Params 0}}.dat'
-    },
-    height: 55,
-    segmentStartMarkerColor: '#a0a0a0',
-    segmentEndMarkerColor: '#a0a0a0',
-    zoomWaveformColor: 'rgba(0, 128, 255, 1)',
-    overviewWaveformColor: 'rgba(0,0,0,0.2)',
-    overviewHighlightColor: 'grey',
-    segmentColor: 'rgba(255, 161, 39, 1)',
-    playheadColor: 'rgba(0, 0, 0, 1)',
-    playheadTextColor: '#aaa',
-    showPlayheadTime: false,
-    pointMarkerColor: '#FF0000',
-    axisGridlineColor: '#ccc',
-    axisLabelColor: '#aaa',
-    randomizeSegmentColor: true
-};
+    $(document).ready(
+        (function(Peaks) {
+            const options = {
+                containers: {
+                    zoomview: document.getElementById('peaks-zoom-{{ .Page.Scratch.Get "audio_peaks"}}'),
+                    overview: document.getElementById('peaks-overview-{{ .Page.Scratch.Get "audio_peaks"}}')
+                },
+                mediaElement: document.getElementById('peaks-audio{{ .Page.Scratch.Get "audio_peaks"}}'),
+                dataUri: {
+                    arraybuffer: '/waveforms/{{ index .Params 0}}.dat'
+                },
+                height: 55,
+                segmentStartMarkerColor: '#a0a0a0',
+                segmentEndMarkerColor: '#a0a0a0',
+                zoomWaveformColor: 'rgba(0, 128, 255, 1)',
+                overviewWaveformColor: 'rgba(0,0,0,0.2)',
+                overviewHighlightColor: 'grey',
+                segmentColor: 'rgba(255, 161, 39, 1)',
+                playheadColor: 'rgba(0, 0, 0, 1)',
+                playheadTextColor: '#aaa',
+                showPlayheadTime: false,
+                pointMarkerColor: '#FF0000',
+                axisGridlineColor: '#ccc',
+                axisLabelColor: '#aaa',
+                randomizeSegmentColor: true
+            };
 
-Peaks.init(options, function(err, peaks) {
-    document.getElementById('zoomIn-{{ .Page.Scratch.Get "audio_peaks"}}').addEventListener("click", function() {
-        peaks.zoom.zoomIn();
-      });
-  
-    document.getElementById('zoomOut-{{ .Page.Scratch.Get "audio_peaks"}}').addEventListener("click", function() {
-        peaks.zoom.zoomOut();
-    });
-});
-})(peaks);
+            Peaks.init(options, function(err, peaks) {
+                document.getElementById('zoomIn-{{ .Page.Scratch.Get "audio_peaks"}}').addEventListener("click", function() {
+                    peaks.zoom.zoomIn();
+                });
+            
+                document.getElementById('zoomOut-{{ .Page.Scratch.Get "audio_peaks"}}').addEventListener("click", function() {
+                    peaks.zoom.zoomOut();
+                });
+            });
+        })(peaks)
+    );
 </script>
 <br>
 <hr>
