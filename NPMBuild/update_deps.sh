@@ -1,5 +1,7 @@
 #!/bin/bash
 
+yarn upgrade
+
 echo "Copying chart.js"
 cp ./node_modules/chart.js/dist/Chart.min.js ../static/js/Chart.min.js
 
