@@ -5,4 +5,10 @@ type: docs
 ---
 # media
 ---
-{{< vid "https://f000.backblazeb2.com/file/personal-website/videos/ccl_2018.mp4" >}}
+<div align=center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IpD_XzW1Az4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ro30O9u7l8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
