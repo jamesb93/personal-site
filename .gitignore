@@ -1,6 +1,5 @@
 .DS_Store
 public/
 static/videos
-NPMBuild/bower_components
 NPMBuild/node_modules
 NPMBuild/yarn.lock
