@@ -16,7 +16,7 @@ This page contains a list of all official peer-reviewed publications and present
 
 ### 2019
 
-*(p)* - 'Finding things in stuff'. FluCoMa Plenary 2019, Huddersfield, UK. **video to come soon**
+*(p)* - 'Finding things in stuff'. FluCoMa Plenary 2019, Huddersfield, UK. [**Video**](https://www.youtube.com/watch?v=IpD_XzW1Az4)
 
 *(p)* - 'Composing with raw data and content-aware programs in Python and Lua'. Creative Coding Lab, Huddersfield, UK.
 
