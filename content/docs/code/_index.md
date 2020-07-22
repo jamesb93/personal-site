@@ -7,6 +7,24 @@ type: docs
 # code
 ---
 
+## ReaCoMa
+
+ReaCoMa is faithful port of [FluCoMa's](https://www.flucoma.org) 'toolbox 1' algorithms to REAPER. ReaCoMa brings several segmentation and decomposition algorithms which can be applied to creative deconstruction, manipulation and transformation all within your favourite DAW.
+
+Language(s): Lua
+<br><br>
+https://www.reacoma.xyz
+
+https://www.github.com/jamesb93/reacoma
+<hr>
+
+## python-flucoma
+
+These are native-ish bindings for Python 3.8+ of the [FluCoMa](https://www.flucoma.org) project's CLI binaries. The bindings offer a functional programming interface to the algorithms which suits the paradigm of chaining together different processes well.
+
+https://github.com/jamesb93/python-flucoma
+<hr>
+
 ## mosh
 
 mosh is a lightweight command-line tool for converting any format of raw data into audio. Several key parameters are exposed to the user allowing them to influence the encoding of the output, such as the bit-depth, channels and the sampling rate. The application compiles to almost any architecture including Android, iOS and ARM alongside standard OS distributions like MacOS, Windows and Linux.
@@ -18,27 +36,25 @@ https://github.com/jamesb93/mosh
 
 ## FrameLib
 
-I am currently responsible for building out and creating the Max documentation for Alex Harker’s project “FrameLib”. I have also contributed some objects to the official repo too.
+I am currently responsible for building an automated system to generate Max documentation for Alex Harker’s project “FrameLib”. I have also contributed some objects to the official repository too.
 
 Language(s): C++, Python 3+
 
 https://github.com/jamesb93/FrameLib
 <hr>
 
-## REAScript(s)
+## ReaScript(s)
 
-REAPER’s powerful scripting API allows the user to execute lua, EEL and Python code to create custom actions and interfaces. The FluCoMa project have recently brought a number of audio analysis, segmentation and processing algorithms targeted at Creative Coding Environments (CCE) like Supercollider, Max and PureData. I wanted to create a cheap and flexible binding to these processes by leveraging lua and the shell. These scripts allow you to set the path to the FluCoMa executables and make it simple to rapidly test out these tools inside of a DAW. 
+REAPER’s powerful scripting API allows the user to execute lua, EEL and Python code to create custom actions and interfaces.
 
 Language(s): Lua
 
-https://github.com/jamesb93/REAPER-Scripts <br>
-https://github.com/jamesb93/ReaCoMa
-
+https://github.com/jamesb93/REAPER-Scripts
 <hr>
 
 ## z12 (Rack implementation)
 
-Miller Puckette outlines an algorithm for generating stochastic sequences that are maximally uniform in this paper. This repo contains a Rack module that implements this algorithm. The output is somewhat markovian in taste and allows you to create some varied rhythms through a probabilistic interface.
+Miller Puckette outlines an algorithm for generating stochastic sequences that are maximally uniform in this paper. This repo contains a Rack module that implements this algorithm. The output is somewhat markovian in taste and allows you to create some varied rhythms through an interface for managing patterns probabilistically.
 
 Language(s): C++
 
