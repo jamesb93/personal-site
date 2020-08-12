@@ -3,3 +3,4 @@ public/
 static/videos
 NPMBuild/node_modules
 NPMBuild/yarn.lock
+resources/_gen/assets/scss
