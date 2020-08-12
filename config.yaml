@@ -1,4 +1,5 @@
-baseURL: https://www.jamesbradbury.xyz
+# baseURL: https://www.jamesbradbury.xyz
+baseURL: /
 languageCode: "en-us"
 title: james bradbury
 theme: book
@@ -6,10 +7,12 @@ theme: book
 publishDir: public
 
 enableGitInfo: false
+disableKinds: ['taxonomy', 'taxonomyTerm']
 params:
   BookToC: false
   BookRepo: false
   BookSearch: false
+  BookMenuBundle: /menu
 
 markup:
   goldmark:

@@ -1,9 +1,3 @@
----
-title: annealing strategies
-weight: 3
-type: docs
----
-
 # Annealing Strategies
 
 “Annealing Strategies” is a system, piece and patch that optimises and searches a chaotic parameter space using the process of simulated annealing. This algorithm mimics the physical mechanism of gradually cooling metal in order to remove internal stresses to strengthen it. The algorithm shares similarities with, and in a way is an improvement on the hill climbing algorithm, with the addition of a ‘temperature’ coefficient that allows for local minima and maxima to be escaped from. Random decisions are allowed with respect to this coefficient, meaning the system is volatile and explorative at high temperatures and more conservative and exploitative at low temperatures. As the system is cooled the system hones in on an optimised solution. 

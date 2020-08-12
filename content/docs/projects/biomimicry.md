@@ -1,9 +1,3 @@
----
-title: biomimicry
-weight: 2
-type: docs
----
-
 # Biomimicry
 
 {{< columns >}}

@@ -1,9 +1,3 @@
----
-title: code
-weight: 4
-type: docs
----
-
 # code
 ---
 

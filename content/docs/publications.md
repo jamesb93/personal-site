@@ -1,10 +1,3 @@
----
-title: publications
-weight: 4
-type: docs
-bookFlatSection: false
----
-
 # publications and presentations
 ---
 
