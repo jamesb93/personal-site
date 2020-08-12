@@ -16,22 +16,22 @@
 {{ $num := .Page.Scratch.Get "audio_peaks"}}
 {{ $id := (printf "audio_peaks_%d" $num)}}
 
-<div>
-    <div id="peaks-zoom-{{ .Page.Scratch.Get "audio_peaks"}}"></div>
+<div class="boxdiv">
     <div id="peaks-overview-{{ .Page.Scratch.Get "audio_peaks"}}"></div>
     <br>
-    <div id="peaks-control" class="oneline">
-        <audio id="peaks-audio{{ .Page.Scratch.Get "audio_peaks"}}" controls=controls class="oneline">
-            <source src="/audio/{{ index .Params 0}}.mp3" type="audio/mp3">
+    <div id="peaks-zoom-{{ .Page.Scratch.Get "audio_peaks"}}"></div>
+    <br>
+    <div id="peaks-control" class="wrapper">
+        <audio id="peaks-audio{{ .Page.Scratch.Get "audio_peaks"}}" controls=controls>
+            <source src="/audio/{{ index .Params 0}}.{{ index .Params 1}}" type="audio/{{ index .Params 1}}">
             Your browser does not support audio.
         </audio>
-        <div id="controls" class="oneline">
+        <div id="controls">
             <button id="zoomIn-{{ .Page.Scratch.Get "audio_peaks"}}" class="button">Zoom In</button>
             <button id="zoomOut-{{ .Page.Scratch.Get "audio_peaks"}}" class="button">Zoom Out</button>
         </div>
     </div>
 </div>
-
 
 <script>
     $(document).ready(
@@ -45,11 +45,11 @@
                 dataUri: {
                     arraybuffer: '/waveforms/{{ index .Params 0}}.dat'
                 },
-                height: 55,
+                height: 60,
                 segmentStartMarkerColor: '#a0a0a0',
                 segmentEndMarkerColor: '#a0a0a0',
-                zoomWaveformColor: 'rgba(0, 128, 255, 1)',
-                overviewWaveformColor: 'rgba(0,0,0,0.2)',
+                zoomWaveformColor: 'rgba(0, 30, 128, 0.61)',
+                overviewWaveformColor: 'rgba(0, 15, 100, 0.3)',
                 overviewHighlightColor: 'grey',
                 segmentColor: 'rgba(255, 161, 39, 1)',
                 playheadColor: 'rgba(0, 0, 0, 1)',
@@ -74,5 +74,3 @@
     );
 </script>
 <br>
-<hr>
-
