@@ -3,7 +3,7 @@
 ReaComa brings the power of the [FluCoMa](https://www.flucoma.org) tools to REAPER. This project was born from my own interest in porting the `fluid.noveltyslice~` algorithm (an implementation of the seminal [Foote paper](https://www.fxpal.com/publications/automatic-audio-segmentation-using-a-measure-of-audio-novelty.pdf)) to be used in my favourite DAW. Now, all of 'toolbox 1' is implemented alongside a set of [tutorial videos](https://www.youtube.com/watch?v=r3uHMXmlPRo&list=PLCQRw62RgghbsZgsA98lLkOwjBSs4yc9T) covering installation, usage and some in depth discussion on how you might apply the tools creatively.
 <img src="/img/reacoma.jpg" alt="reacoma logo" class=center></img>
 
-ReaCoMa might be interesting to you if you are interested in non-standard ways of decomposing, segmenting and transforming sounds in REAPER. With ReaCoMa you can perform:
+ReaCoMa might be interesting to you if you are concerned with signal decomposition, segmentation or transforming sounds in REAPER. With ReaCoMa you can perform:
 
 [Non-negative matrix factorisation(NMF)](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization)
 
