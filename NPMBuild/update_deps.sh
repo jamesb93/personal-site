@@ -10,3 +10,6 @@ cp ./node_modules/jquery/dist/jquery.min.js ../static/js/jquery.min.js
 
 echo "Copying peaks.js"
 cp ./node_modules/peaks.js/peaks.js ../static/js/peaks.js
+
+echo "Copying quicklink.js"
+cp ./node_modules/quicklink/dist/quicklink.umd.js ../static/js/quicklink.umd.js
