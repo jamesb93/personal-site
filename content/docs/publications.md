@@ -7,6 +7,10 @@ This page contains a list of all official peer-reviewed publications and present
 
 *(p) presented.*
 
+### 2020
+
+*(p)* - 'Computer-assisted corpus exploration with UMAP and agglomerative clustering. The 2020 Joint Conference on AI Music Creativity, Online. 
+
 ### 2019
 
 *(p)* - 'Finding things in stuff'. FluCoMa Plenary 2019, Huddersfield, UK. [**Video**](https://www.youtube.com/watch?v=IpD_XzW1Az4)
