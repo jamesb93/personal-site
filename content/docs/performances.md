@@ -1,6 +1,5 @@
 # performances
 
-
 ### **2019**
 
 Refracted Touch for Slide Guitar and Electronics. St Paul's, Huddersfield, 2019 UK. Performed by [Daryl Buckley (Slide Guitar)](http://www.elision.org.au/elision-189/) and James Bradbury (Electronics)
