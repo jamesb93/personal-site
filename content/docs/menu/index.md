@@ -1,7 +1,3 @@
-+++
-headless = true
-+++
-
 ### info
 - [music]({{< relref "/docs/music" >}})
 - [media]({{< relref "/docs/media" >}})

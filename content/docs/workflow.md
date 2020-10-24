@@ -3,8 +3,6 @@
 Here is some software I use all the time for a variety of tasks.
 I think it's nice to share, and as a way of giving recognition to what are mostly free open-source projects.
 
----
-
 ## Research
 - Knowledge management and notes with [Dendron](https://www.dendron.so)
 - Citation and reference management with [Zotero](https://www.zotero.org)

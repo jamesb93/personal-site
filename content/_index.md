@@ -3,9 +3,6 @@ title: home
 type: docs
 ---
 
-# about
-<hr>
-
 <div align="center">
 <img src="/img/personal.jpg" alt="Myself, Niamh Dell and Jameson Feakes" width="75%" align="center">
 </div>

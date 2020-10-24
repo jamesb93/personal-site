@@ -1,5 +1,4 @@
 # consulting
----
 
 I offer consulting on a range of creative coding topics. In the past I have worked with artists to help them build instruments, installations or advise them on big picture aspects of incorporating technology into creative practice.
 
