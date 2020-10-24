@@ -1,11 +1,15 @@
 # publications and presentations
----
+
 
 This page contains a list of all official peer-reviewed publications and presentations. I will try to provide links where possible to anything that is open access.
 
 *(i) invited but not attended.* 
 
 *(p) presented.*
+
+### 2020
+
+*(p)* - 'Computer-assisted corpus exploration with UMAP and agglomerative clustering. The 2020 Joint Conference on AI Music Creativity, Online. 
 
 ### 2019
 
