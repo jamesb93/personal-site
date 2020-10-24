@@ -1,6 +1,5 @@
 # code
 
-
 ## ReaCoMa
 
 ReaCoMa is set of bindings to [FluCoMa's](https://www.flucoma.org) 'toolbox 1' algorithms in REAPER. ReaCoMa brings several segmentation and decomposition algorithms which can be applied to creative deconstruction, manipulation and transformation all within your favourite DAW.
